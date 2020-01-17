@@ -7,7 +7,7 @@ First instantiate an instance of PyBed in the python-notated location of your sc
 ```c++
 PyBed pybed = PyBed::InitWithScript("your_script"); // would be found at your_script.py in the working directory
 ```
-Great now you have an instance of the python embedder. Its as easy as pie calling functions now:
+Great now you have an instance of the python embedder. It's as easy as pie calling functions now, all you have to do is call ```Invoke``` casted to the desired return type with the parameter being the function name like so:
 ```c++
 int day = pybed.Invoke<int>("get_day_of_the_month");
 ```
