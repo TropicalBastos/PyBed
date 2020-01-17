@@ -1,26 +1,16 @@
-dist: trusty
-sudo: required
-
 language: cpp
 compiler: gcc
 
+os: linux
 addons:
-    apt:
-      sources:
-        - ubuntu-toolchain-r-test
-      packages:
-        - gcc-7
-        - g++-7
-  script:
-    - export CC=gcc-7
-    - export CXX=g++-7
-
-install:
-    - cmake .
-    - make
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
 
 script:
-    - cd test
-    - make
-    - ./test.out
-    - make clean
+  - export CC=gcc-7
+  - export CXX=g++-7
+  - cmake --version
+  - cmake .
