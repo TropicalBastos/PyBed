@@ -17,4 +17,5 @@ script:
   - cmake .
   - make
   - cd test
+  - export PYTHON_PATH=/usr/include/python2.7
   - make && ./test.out
