@@ -1,4 +1,4 @@
-#include "pybed.h"
+#include "../include/pybed.h"
 
 PyBed::PyBed(const char* scriptPath) : scriptOrigin(scriptPath), guard{}
 {

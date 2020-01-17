@@ -1,4 +1,4 @@
-#include "pybed.h"
+#include "../include/pybed.h"
 #include <assert.h>
 #include <string>
 #include <time.h>
