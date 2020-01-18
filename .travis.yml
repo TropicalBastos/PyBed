@@ -10,12 +10,14 @@ addons:
       - g++-7
       - python2.7-dev
 
-script:
+before_script:
   - export CC=gcc-7
   - export CXX=g++-7
   - cmake --version
   - cmake .
   - make
+
+script:
   - cd test
   - export PYTHON_PATH=/usr/include/python2.7
   - make && ./test.out
