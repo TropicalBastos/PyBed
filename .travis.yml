@@ -8,8 +8,7 @@ addons:
       - ubuntu-toolchain-r-test
     packages:
       - g++-7
-      - python2.7-dev
-      - python3.2-dev
+      - python3.7-dev
 
 script:
   - export CC=gcc-7
@@ -18,5 +17,5 @@ script:
   - cmake .
   - make
   - cd test
-  - export PYTHON_PATH=/usr/include/python2.7
+  - export PYTHON_PATH=/usr/include/python3.7
   - make && ./test.out
