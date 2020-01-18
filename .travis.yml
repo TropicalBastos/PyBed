@@ -14,8 +14,9 @@ script:
   - export CC=gcc-7
   - export CXX=g++-7
   - cmake --version
-  - cmake .
+  - cd build
+  - cmake ..
   - make
-  - cd test
+  - cd ../test
   - export PYTHON_PATH=/usr/include/python2.7
   - make && ./test.out
