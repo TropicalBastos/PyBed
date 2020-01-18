@@ -1,5 +1,6 @@
-# PyBed
-
+<h1><span>PyBed
+<img align="right" src="https://travis-ci.com/TropicalBastos/PyBed.svg?branch=master" /></span></h1>
+<br />
 ## Calling Python from C++
 Call Python from C++ with the utmost ease with a couple of lines!
 <br />
