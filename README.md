@@ -38,7 +38,8 @@ I have not worked on calling C++ from Python yet, as it stands this library curr
 ## Building
 To build run the following:
 ```bash
-cmake .
+cd build
+cmake ..
 make
 ```
 

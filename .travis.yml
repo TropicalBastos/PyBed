@@ -16,7 +16,6 @@ script:
   - cmake --version
   - cmake .
   - make
-  - nm libPyBed.a
   - cd test
   - export PYTHON_PATH=/usr/include/python2.7
   - make && ./test.out
