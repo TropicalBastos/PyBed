@@ -8,8 +8,8 @@ OUTPUT = -o test.out
 SOURCES = test.cpp
 
 test.out: 
-	$(CXX_COMPILER) $(CXX_FLAGS) $(OUTPUT) \
-	$(INCLUDE_OPTIONS) $(LINKER_OPTIONS) $(SOURCES)
+	$(CXX_COMPILER) $(CXX_FLAGS) $(OUTPUT) $(SOURCES) \
+	$(INCLUDE_OPTIONS) $(LINKER_OPTIONS)
 
 clean: 
 	rm test.out
