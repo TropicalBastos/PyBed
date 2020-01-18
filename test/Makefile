@@ -2,7 +2,7 @@
 CXX_COMPILER = g++
 CXX_FLAGS = -std=c++11
 LINKER_OPTIONS = -L ../ -lPyBed -lpython2.7
-INCLUDE_OPTIONS = -I../src/ -I${PYTHON_PATH}
+INCLUDE_OPTIONS = -I../include/ -I${PYTHON_PATH}
 
 OUTPUT = -o test.out
 SOURCES = test.cpp
