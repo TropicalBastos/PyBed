@@ -9,6 +9,7 @@ addons:
     packages:
       - g++-7
       - python2.7-dev
+      - python3.2-dev
 
 script:
   - export CC=gcc-7
