@@ -19,3 +19,8 @@ void PyBed::InvokeVoid(const char* func) const
 {
     module.attr(func)();
 }
+
+py::module PyBed::GetPyBindModule() const 
+{
+    return module;
+}

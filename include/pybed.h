@@ -1,11 +1,8 @@
 #ifndef PYBED_H
 #define PYBED_H
 
-#define PYBIND11_LOC "../pybind11/include/pybind11/pybind11.h"
-#define PYBIND11_EMBED_LOC "../pybind11/include/pybind11/embed.h"
-
-#include PYBIND11_LOC
-#include PYBIND11_EMBED_LOC
+#include "./pybind11/pybind11.h"
+#include "./pybind11/embed.h"
 
 #include <string>
 
@@ -18,6 +15,8 @@ public:
     static PyBed* InitWithScriptOnHeap(const char* func);
 
     void InvokeVoid(const char* func) const;
+
+    py::module GetPyBindModule() const;
 
     template<typename T>
     inline T Invoke(const char* func) const
